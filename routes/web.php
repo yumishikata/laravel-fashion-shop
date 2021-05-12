@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('pagina-home');
 
 Route::get('/products', 'HomeController@products')->name('pagina-prodotti');
+
+Route::get('/contacts', 'HomeController@contacts')->name('pagina-contatti');

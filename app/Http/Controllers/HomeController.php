@@ -18,4 +18,9 @@ class HomeController extends Controller
         ];
         return view('products', $data);
     }
+
+    public function contacts()
+    {
+        return view('contacts');
+    }
 }
